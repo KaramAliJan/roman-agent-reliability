@@ -1,0 +1,173 @@
+# =========================================================
+# Python
+# =========================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# Python packaging
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+*.whl
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+
+# =========================================================
+# Environment & Secrets
+# =========================================================
+
+.env
+.env.*
+!.env.example
+
+# config.py is where your Gemini key actually lives
+# (`from config import GEMINI_API_KEY`) -- .env alone does NOT protect
+# this. Keep config.example.py as a safe, committed placeholder instead.
+config.py
+!config.example.py
+
+*.pem
+*.key
+*.crt
+secrets/
+credentials/
+service-account*.json
+
+
+# =========================================================
+# AI / ML
+# =========================================================
+
+# Large model files -- relevant once you get to Phase 6 (verifier fine-tuning)
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+*.onnx
+
+# ML caches
+.cache/
+huggingface/
+transformers_cache/
+wandb/
+mlruns/
+
+# Generated embeddings / vector indexes -- NOTE: your current corpus
+# embeddings live inside final_corpus_chunks.json, which you DO want
+# tracked (it's your reviewed corpus -- a core research artifact). These
+# rules only matter if you later export a separate large embedding cache
+# under one of these folder names; they won't touch final_corpus_chunks.json.
+embeddings/
+indexes/
+vector_db/
+chroma/
+faiss_index/
+
+
+# =========================================================
+# Logs / temp
+# =========================================================
+
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.cache
+
+
+# =========================================================
+# OS
+# =========================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+.directory
+
+
+# =========================================================
+# IDE / Editors
+# =========================================================
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+
+# VS Code history
+.history/
+
+
+# =========================================================
+# Private / local-only working files
+# =========================================================
+
+local/
+scratch/
+debug/
+notes_private/
+
+
+# =========================================================
+# Large archives -- packaged deliverables, not source
+# =========================================================
+
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+
+
+# =========================================================
+# Raw run artifacts (optional -- see note)
+# =========================================================
+
+# Your actual results folder is results/ -- NOT ignored by default,
+# since your comparison tables and run logs are real research outputs
+# you likely want version-controlled for reproducibility. Uncomment only
+# if repeated dev-run logs start bloating the repo:
+# results/*.json
+
+traces/
+raw_outputs/

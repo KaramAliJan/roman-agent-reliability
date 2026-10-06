@@ -1,0 +1,23 @@
+# --- Core ---
+pandas>=2.0.0
+python-dotenv>=1.0.0
+
+# --- LLM providers (install whichever you're actively using) ---
+anthropic>=0.40.0
+google-genai>=0.3.0
+
+# --- Retrieval ---
+scikit-learn>=1.5.0
+nltk>=3.9.0
+
+# --- Corpus document creation / extraction ---
+reportlab>=4.0.0
+pdfplumber>=0.11.0
+
+# --- Analysis (Phase 4) ---
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# --- Verifier fine-tuning (Phase 6, install only when you get there) ---
+# transformers>=4.44.0
+# torch>=2.3.0

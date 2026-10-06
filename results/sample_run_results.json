@@ -1,0 +1,48 @@
+[
+  {
+    "task_id": "T023",
+    "variant": "english",
+    "input_text": "Create an IT ticket for my laptop.",
+    "predicted_intent": "no_tool_called",
+    "tool_called": "",
+    "tool_params": {},
+    "tool_output": {},
+    "final_answer": "I can do that. What is the problem with your laptop?"
+  },
+  {
+    "task_id": "T023",
+    "variant": "roman_urdu_natural",
+    "input_text": "Mere laptop ke liye IT ki shikayat darj kar do.",
+    "predicted_intent": "create_it_ticket",
+    "tool_called": "create_it_ticket",
+    "tool_params": {
+      "subject": "Laptop IT complaint"
+    },
+    "tool_output": {
+      "status": "created",
+      "ticket_id": "TCK0001",
+      "subject": "Laptop IT complaint",
+      "priority": "medium",
+      "description": ""
+    },
+    "final_answer": "{\"status\": \"created\", \"ticket_id\": \"TCK0001\", \"subject\": \"Laptop IT complaint\", \"priority\": \"medium\", \"description\": \"\"}"
+  },
+  {
+    "task_id": "T023",
+    "variant": "roman_urdu_codemixed",
+    "input_text": "Mere laptop ka IT ticket bana do.",
+    "predicted_intent": "create_it_ticket",
+    "tool_called": "create_it_ticket",
+    "tool_params": {
+      "subject": "Laptop issue"
+    },
+    "tool_output": {
+      "status": "created",
+      "ticket_id": "TCK0002",
+      "subject": "Laptop issue",
+      "priority": "medium",
+      "description": ""
+    },
+    "final_answer": "{\"status\": \"created\", \"ticket_id\": \"TCK0002\", \"subject\": \"Laptop issue\", \"priority\": \"medium\", \"description\": \"\"}"
+  }
+]
